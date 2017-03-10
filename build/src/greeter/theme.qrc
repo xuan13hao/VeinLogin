@@ -1,0 +1,13 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/theme">
+    <file alias="angle-down.png">/home/jack/sddm.bak/src/greeter/theme/angle-down.png</file>
+    <file alias="angle-left.png">/home/jack/sddm.bak/src/greeter/theme/angle-left.png</file>
+    <file alias="angle-right.png">/home/jack/sddm.bak/src/greeter/theme/angle-right.png</file>
+    <file alias="background.png">/home/jack/sddm.bak/src/greeter/theme/background.png</file>
+    <file alias="Main.qml">/home/jack/sddm.bak/build/src/greeter/theme/Main.qml</file>
+    <file alias="reboot.png">/home/jack/sddm.bak/src/greeter/theme/reboot.png</file>
+    <file alias="shutdown.png">/home/jack/sddm.bak/src/greeter/theme/shutdown.png</file>
+    <file alias="metadata.desktop">/home/jack/sddm.bak/src/greeter/theme/metadata.desktop</file>
+    <file alias="theme.conf">/home/jack/sddm.bak/src/greeter/theme/theme.conf</file>
+</qresource>
+</RCC>
