@@ -52,7 +52,7 @@
 #include <fcntl.h>
 #include <pthread.h>
 
-#include "dohighdata.h"
+#include "DoVeinData.h"
 //#include "dodata.h"
 #include "XG_Protocol.h"
 

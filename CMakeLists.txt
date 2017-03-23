@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.8)
 
 project(SDDM)
 
-set(CMAKE_PREFIX_PATH "/home/qt/5.7/gcc_64")
+set(CMAKE_PREFIX_PATH "/opt/Qt5.7.1/5.7/gcc_64")
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
 SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)

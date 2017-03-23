@@ -1,1 +1,0 @@
-/usr/bin/c++    -O2 -O3 -DNDEBUG   CMakeFiles/ConfigurationTest.dir/ConfigurationTest.cpp.o CMakeFiles/ConfigurationTest.dir/__/src/common/ConfigReader.cpp.o CMakeFiles/ConfigurationTest.dir/ConfigurationTest_automoc.cpp.o  -o ConfigurationTest -rdynamic /home/qt/5.7/gcc_64/lib/libQt5Test.so.5.7.1 /home/qt/5.7/gcc_64/lib/libQt5Core.so.5.7.1 -Wl,-rpath,/home/qt/5.7/gcc_64/lib 
