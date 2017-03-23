@@ -27,7 +27,7 @@
 
 #include "Auth.h"
 #include "Session.h"
-
+#include "DoVeinData.h"
 class QLocalSocket;
 
 namespace SDDM {
