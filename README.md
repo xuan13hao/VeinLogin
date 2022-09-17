@@ -1,8 +1,4 @@
 ## ABSTRACT
-
-[![Build Status](https://travis-ci.org/sddm/sddm.svg?branch=master)](https://travis-ci.org/sddm/sddm)
-[![IRC Network](https://img.shields.io/badge/irc-freenode-blue.svg "IRC Freenode")](https://webchat.freenode.net/?channels=sddm)
-
 Aiming at the problems of low efficiency, easily forgotten and stolen authentication of
 traditional operating system password authentication scheme, based on the finger vein recognition
 technology, by utilizing the features of non-contact, liveliness, high adaptability and high security,
@@ -13,7 +9,7 @@ recognition technology as authentication mode can run on Space OS for a long tim
 fault, whose finger vein recognition has high pass rate and low false accept rate, and has good
 stability and higher security. 
 
-## SPACE OS
+## Space OS
 The traditional operating system login is mainly done through a combination of user name and
 password authentication. There is a problem of being stolen and forgotten, which cannot guarantee
 the accuracy and security of identity authentication. Biometric technologies can verify their
@@ -41,6 +37,9 @@ PAM mechanism is a very mature security authentication mechanism that provides s
 reliable authentication services for a wide range of applications. The Space OS authentication
 system designed in this paper is applied to the identity authentication of the Space OS login, which
 can effectively solve security problems such as password leakage and hacker attacks.
+
+## Finger vein recognition
+The processing of finger vein information by the Space OS authentication system is mainly done by the finger vein device. Finger vein information processing is composed of finger vein image collection, image processing (including image enhancement, segmentation and feature extraction) and identify matching. When a certain wavelength of near infrared light shines on the user's finger, it can capture the user's finger vein image information. 
 
 ## SDDM
 
