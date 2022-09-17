@@ -57,7 +57,12 @@ finger vein recognition module. The login user interface is designed by QML in t
 theme. The authentication framework at the bottom of the system uses PAM, combined with finger
 vein recognition and achieve the login user interface and background service communication
 through Qt signals and slots.
-
-
+Finger vein recognition functions are encapsulated in the fingervein.so library located in the
+system library directory, which can be used by the Space OS authentication system to configure the
+PAM service. When calling the finger vein recognition API, the Space OS authentication system
+establishes a communication with the finger vein instrument and starts a series of operations. First,
+the finger vein instrument is initialized; after the initialization is completed, the finger vein
+information is collected and further processed; finally, matching of the finger vein information is
+started to complete the authentication.
 
 
