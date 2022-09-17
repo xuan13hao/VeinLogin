@@ -3,6 +3,16 @@
 [![Build Status](https://travis-ci.org/sddm/sddm.svg?branch=master)](https://travis-ci.org/sddm/sddm)
 [![IRC Network](https://img.shields.io/badge/irc-freenode-blue.svg "IRC Freenode")](https://webchat.freenode.net/?channels=sddm)
 
+Aiming at the problems of low efficiency, easily forgotten and stolen authentication of
+traditional operating system password authentication scheme, based on the finger vein recognition
+technology, by utilizing the features of non-contact, liveliness, high adaptability and high security,
+modifying the original code of open source project SDDM and using PAM authentication
+mechanism, a secure and reliable identity authentication system is designed on Space OS platform.
+The experimental result shows that the Space OS authentication system using finger vein
+recognition technology as authentication mode can run on Space OS for a long time and without
+fault, whose finger vein recognition has high pass rate and low false accept rate, and has good
+stability and higher security. 
+
 SDDM is a modern display manager for X11 and Wayland aiming to be fast, simple and beautiful.
 It uses modern technologies like QtQuick, which in turn gives the designer the ability to
 create smooth, animated user interfaces.
