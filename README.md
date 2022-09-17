@@ -1,4 +1,4 @@
-## ABSTRACT
+## Introduction
 Aiming at the problems of low efficiency, easily forgotten and stolen authentication of
 traditional operating system password authentication scheme, based on the finger vein recognition
 technology, by utilizing the features of non-contact, liveliness, high adaptability and high security,
@@ -8,8 +8,6 @@ The experimental result shows that the Space OS authentication system using fing
 recognition technology as authentication mode can run on Space OS for a long time and without
 fault, whose finger vein recognition has high pass rate and low false accept rate, and has good
 stability and higher security. 
-
-## Space OS
 The traditional operating system login is mainly done through a combination of user name and
 password authentication. There is a problem of being stolen and forgotten, which cannot guarantee
 the accuracy and security of identity authentication. Biometric technologies can verify their
@@ -22,11 +20,6 @@ Due to the uniqueness of the finger vein, forgery difficulty and biopotency, its
 advantages over the traditional authentication methods and other biometric technologies.
 However, no solution based on finger vein recognition technology at present is used in the
 authentication of the operating system when logging in.
-Space OS is a new operating system based on the Linux kernel with a number of independent
-intellectual property rights, with features such as security, reliability, cross-platform and support for
-interoperability. Its login, logout, session establishment, and shutdown are mainly achieved through
-SDDM (Simple Desktop Display Manager). SDDM is an open source display manager that can
-easily extend its original capabilities by modifying the source code.
 In this project, authentication system is based on SDDM by modifying and adding a large amount
 of codes. Its finger vein recognition is supported through the PAM (Pluggable Authentication
 Modules) authentication framework, by which the identity of the user is authenticated when they
@@ -37,6 +30,14 @@ PAM mechanism is a very mature security authentication mechanism that provides s
 reliable authentication services for a wide range of applications. The Space OS authentication
 system designed in this paper is applied to the identity authentication of the Space OS login, which
 can effectively solve security problems such as password leakage and hacker attacks.
+
+## Space OS
+Space OS is a new operating system based on the Linux kernel with a number of independent
+intellectual property rights, with features such as security, reliability, cross-platform and support for
+interoperability. Its login, logout, session establishment, and shutdown are mainly achieved through
+SDDM (Simple Desktop Display Manager). SDDM is an open source display manager that can
+easily extend its original capabilities by modifying the source code.
+
 
 ## Finger Vein Recognition
 The processing of finger vein information by the Space OS authentication system is mainly done by the finger vein device. Finger vein information processing is composed of finger vein image collection, image processing (including image enhancement, segmentation and feature extraction) and identify matching. When a certain wavelength of near infrared light shines on the user's finger, it can capture the user's finger vein image information. 
