@@ -27,7 +27,7 @@ intellectual property rights, with features such as security, reliability, cross
 interoperability. Its login, logout, session establishment, and shutdown are mainly achieved through
 SDDM (Simple Desktop Display Manager). SDDM is an open source display manager that can
 easily extend its original capabilities by modifying the source code.
-In this paper, authentication system is based on SDDM by modifying and adding a large amount
+In this project, authentication system is based on SDDM by modifying and adding a large amount
 of codes. Its finger vein recognition is supported through the PAM (Pluggable Authentication
 Modules) authentication framework, by which the identity of the user is authenticated when they
 login Space OS. Unlike other biometric technologies, such as fingerprint, finger vein is not easily
@@ -38,7 +38,7 @@ reliable authentication services for a wide range of applications. The Space OS 
 system designed in this paper is applied to the identity authentication of the Space OS login, which
 can effectively solve security problems such as password leakage and hacker attacks.
 
-## Finger vein recognition
+## Finger Vein Recognition
 The processing of finger vein information by the Space OS authentication system is mainly done by the finger vein device. Finger vein information processing is composed of finger vein image collection, image processing (including image enhancement, segmentation and feature extraction) and identify matching. When a certain wavelength of near infrared light shines on the user's finger, it can capture the user's finger vein image information. 
 
 ## SDDM
@@ -58,76 +58,6 @@ theme. The authentication framework at the bottom of the system uses PAM, combin
 vein recognition and achieve the login user interface and background service communication
 through Qt signals and slots.
 
-## VIDEOS
 
-* [Video background](https://www.youtube.com/watch?v=kKwz2FQcE3c)
-* [Maui theme 1](https://www.youtube.com/watch?v=-0d1wkcU9DU)
-* [Maui theme 2](https://www.youtube.com/watch?v=dJ28mrOeuNA)
 
-## RESOURCES
 
-* [Issue tracker](https://github.com/sddm/sddm/issues)
-* [Wiki](https://github.com/sddm/sddm/wiki)
-* [Mailing List](https://groups.google.com/group/sddm-devel)
-* IRC channel `#sddm` on [chat.freenode.net](https://webchat.freenode.net?channels=sddm)
-
-## INSTALLATION
-
-Qt >= 5.6.0 is required to use SDDM.
-
-SDDM runs the greeter as a system user named "sddm" whose home directory needs
-to be set to `/var/lib/sddm`.
-
-If pam and systemd are available, the greeter will go through logind
-which will give it access to drm devices.
-
-Distributions without pam and systemd will need to put the "sddm" user
-into the "video" group, otherwise errors regarding GL and drm devices
-might be experienced.
-
-## LICENSE
-
-Source code of SDDM is licensed under GNU GPL version 2 or later (at your choosing).
-QML files are MIT licensed and images are CC BY 3.0.
-
-## TROUBLESHOOTING
-
-### NVIDIA Prime
-
-Add this at the bottom of the Xsetup script:
-
-```sh
-if [ -e /sbin/prime-offload ]; then
-    echo running NVIDIA Prime setup /sbin/prime-offload, you will need to manually run /sbin/prime-switch to shut down
-    /sbin/prime-offload
-fi
-```
-
-### No User Icon
-
-SDDM reads user icon from either ~/.face.icon or FacesDir/username.face.icon
-
-You need to make sure that SDDM user have permissions to read those files.
-In case you don't want to allow other users to access your $HOME you can use
-ACLs if your filesystem does support it.
-
-```sh
-setfacl -m u:sddm:x /home/username
-setfacl -m u:sddm:r /home/username/.face.icon
-```
-
-### Custom DPI
-
-In order to set custom DPI for high resolution screens you should configure
-Xorg yourself.  An easy way is to pass an additional argument to Xorg.
-
-Edit ``/etc/sddm.conf``, go to the ``X11`` section and change ``ServerArguments`` like this:
-
-```
-ServerArguments=-nolisten tcp -dpi 192
-```
-
-to set DPI to 192.
-
-As an alternative you can edit Xorg configuration ``xorg.conf``, please refer to the
-Xorg documentation.
